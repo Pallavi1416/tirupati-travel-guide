@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tirupati Balaji Travel Guide</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #8B0000;
+      border-bottom: 2px solid #8B0000;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px;
+      background: #fff;
+      margin: 5px 0;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #8B0000;
+      color: white;
+      margin-top: 20px;
+    }
+    .toggle-btn {
+      background: #8B0000;
+      color: white;
+      padding: 8px 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  🛕 Tirupati Balaji Travel Guide
+</header>
+
+<section>
+  <h2>🌸 Famous Temples</h2>
+  <button class="toggle-btn" data-target="#temples">Show/Hide</button>
+  <ul id="temples">
+    <li>🛕 Tirumala Venkateswara Temple (Main Balaji Temple)</li>
+    <li>🛕 Padmavathi Ammavari Temple</li>
+    <li>🛕 Kapila Theertham Temple</li>
+    <li>🛕 Govindaraja Swamy Temple</li>
+    <li>🛕 ISKCON Tirupati</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🏥 Hospitals Nearby</h2>
+  <button class="toggle-btn" data-target="#hospitals">Show/Hide</button>
+  <ul id="hospitals">
+    <li>Sri Venkateswara Institute of Medical Sciences (SVIMS)</li>
+    <li>Balaji Institute of Surgery, Research & Rehabilitation</li>
+    <li>Ruia Government General Hospital</li>
+    <li>City Hospital Tirupati</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🏨 Hotels & Restaurants</h2>
+  <button class="toggle-btn" data-target="#hotels">Show/Hide</button>
+  <ul id="hotels">
+    <li>Hotel Fortune Select Grand Ridge</li>
+    <li>Ramee Guestline Hotel</li>
+    <li>Bhimas Paradise</li>
+    <li>Saravana Bhavan (Veg Restaurant)</li>
+    <li>Mayura Hotel</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📅 Darshan Timings</h2>
+  <ul>
+    <li>Suprabhatam Seva: 3:00 AM – 3:30 AM</li>
+    <li>Sarva Darshan (General Entry): 7:00 AM – 7:00 PM</li>
+    <li>Special Entry Darshan (₹300): 9:00 AM – 5:00 PM</li>
+    <li>Break Darshan: 12:00 PM – 12:30 PM</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🚑 Emergency Numbers</h2>
+  <ul>
+    <li>🚑 Ambulance: <a href="tel:108">108</a></li>
+    <li>🚓 Police: <a href="tel:100">100</a></li>
+    <li>🔥 Fire Station: <a href="tel:101">101</a></li>
+    <li>☎ Helpline: <a href="tel:112">112</a></li>
+    <li>📞 Tirumala Tirupati Devasthanams (TTD) Helpline: 1800-425-4141</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🗺 Location Map</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.737129350198!2d79.34532827482167!3d13.683889586681213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d50a42b0e3c7f%3A0x51c748a317f0f9d1!2sSri%20Venkateswara%20Swamy%20Vaari%20Temple!5e0!3m2!1sen!2sin!4v1692726829092!5m2!1sen!2sin" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</section>
+
+<footer>
+  © 2025 Tirupati Balaji Travel Guide
+</footer>
+
+<script>
+  // jQuery toggle for sections
+  $(document).ready(function(){
+    $(".toggle-btn").click(function(){
+      $($(this).data("target")).slideToggle();
+    });
+  });
+</script>
+
+</body>
+</html>
